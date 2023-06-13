@@ -38,6 +38,21 @@ options:
   ```
   You can combine them, like so `./merge.py -p songs -p modes`
   
+- If you want to override some items, you can have a overrides.json file containing items that will be used instead of the file you are merging with.
+
+  Example overrides.json:
+  ```json
+  [
+      {
+        "key": "folder_intro_howto",
+        "japaneseText": "Let's learn how to play this game!",
+        "japaneseFontType": 0
+    }
+  ]
+  ```
+  
+- If you want to use another path, you can do so like this `./merge.py --overrides custom_overrides.json`
+  
 ## Helper scripts
 
 - wordlist.bin and wordlist.en.bin -> wordlist.json and wordlist.en.json
